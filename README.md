@@ -16,6 +16,8 @@ Add OpenTelemetry Helm repository:
 helm dependency update .
 ```
 
+Lint Check
+
 ```console
 helm lint .
 ```
@@ -121,4 +123,8 @@ parameters by default. The overriden parameters are specified below.
 | `datasources`         | Configure grafana datasources (passed through tpl) | Prometheus and Jaeger data sources                                   |
 | `dashboardProviders`  | Configure grafana dashboard providers              | Defines a `default` provider based on a file path                    |
 | `dashboardConfigMaps` | ConfigMaps reference that contains dashboards      | Dashboard config map deployed with this Helm chart                   |
+
+
+#### End Result
+![image](https://github.com/user-attachments/assets/2f214d83-e8e1-4cde-a749-d9cc66c8eee9)
 
